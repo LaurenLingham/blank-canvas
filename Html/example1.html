@@ -1,0 +1,66 @@
+<html>
+
+<body>
+    <table border="1" align="center">
+        <tr>
+            <th>Cats</th>
+            <th>Dogs</th>
+        </tr>
+        <tr>
+            <td>One</td>
+            <td colspan="2">Two</td>
+            <td>Three</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <p>Something not hidden</p>
+    <p id="thething">Test 2</p>
+    <a href="https://www.google.com" target="_blank">
+        <p>This is the text for the link to google</p>
+    </a>
+    <input id="textarea1" type="textarea" />
+    <div>
+        <button onclick="displayTextFromTextArea()">Click me</button>
+    </div>
+    <script>
+        let blah = 1;
+        let test2 = "A sentence";
+
+        function displayAlert() {
+            alert("The function has been called");
+        }
+
+        function displayTextFromTextArea() {
+            let text = document.getElementById('textarea1').value;
+
+            alert(text);
+        }
+    </script>
+
+    <style>
+        #thething {
+            color: blueviolet
+        }
+
+        /* table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td {
+            width: 50px
+        } */
+    </style>
+</body>
+
+</html>
+
+<!-- style="display:none" -->
