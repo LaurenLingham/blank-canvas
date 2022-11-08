@@ -1,0 +1,27 @@
+// For Loop
+
+let bobsFollowers = ['Gavin', 'Mark', 'Brian', 'Steve'];
+
+let tinasFollowers = ['Steve', 'Anna', 'Mark'];
+
+let mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+};
+
+// Do While Statement
+
+let cupsOfSugarNeeded = 2
+
+let cupsAdded = 0
+
+do {
+  cupsAdded++
+  console.log(cupsAdded + ' cup was added')
+} while (cupsAdded < cupsOfSugarNeeded);
+ 
